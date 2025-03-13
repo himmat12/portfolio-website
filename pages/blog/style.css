@@ -1,0 +1,9 @@
+@import url('../../styles.css');
+
+/* blog post styles */
+
+.blog-post-wrapper {
+    margin: 20px 0px;
+    padding: 0px 16px;
+    border: 2px solid grey;
+}

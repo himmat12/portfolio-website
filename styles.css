@@ -1,0 +1,97 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #444444;
+}
+
+
+/* navbar styles */
+
+nav {
+    display: flex;
+    border-bottom: 2px solid grey;
+}
+
+nav .left-section,
+nav .right-section {
+    flex: 3;
+}
+
+nav .center-section {
+    flex: 10;
+}
+
+nav .nav-menu {
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    list-style: none;
+}
+
+nav .nav-menu-item {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav .nav-menu a {
+    text-decoration: none;
+
+    &:hover {
+        color: blue;
+    }
+
+}
+
+
+/* footer styles */
+
+footer {
+    margin-top: auto;
+    border-top: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-section {
+    display: flex;
+    /* justify-content: center; */
+    gap: 40px;
+}
+
+footer .left-section,
+footer .right-section {
+    width: 16%;
+}
+
+
+footer .footer-menu {
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+footer .footer-menu-item {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer .footer-menu a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
+
+footer .copyright-section {
+    padding: 12px 0px;
+    margin: 0px 0px 8px 0px;
+    border: 1px solid grey;
+    border-style: dotted;
+    text-align: center;
+}
