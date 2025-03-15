@@ -1,8 +1,7 @@
 <?php
+$configPath = './config.ini';
 
-require_once BASE_PATH . '/config.php';
-
-$config = parse_ini_file(SERVER_CONFIG . '/config.ini', true)['database'];
+$config = parse_ini_file($configPath, true)['database'];
 
 $host = $config['host'];
 $dbname = $config['dbname'];
@@ -13,3 +12,4 @@ $charset = 'utf8mb4';
 $dns = "mysql:host={$host};dbname={$dbname};charset={$charset}";
 
 $conn = new PDO($dns, $username, $password);
+

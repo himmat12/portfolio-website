@@ -13,9 +13,16 @@ $title = "Himmat Portfolio"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?></title>
     <link rel="stylesheet" href="styles.css">
+
+    <script src="demo.js" defer></script>
 </head>
 
-<body>
+<body class="app">
+    <div class="test-box">
+        This is demo for integrating backend api
+
+    </div>
+    <button class="get-data-btn">get data</button>
 
     <?php include BASE_PATH . '/templates/header.php' ?>
     <?php include  BASE_PATH . '/pages/home/main.php' ?>
